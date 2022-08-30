@@ -16,6 +16,7 @@
 		9FA2E1F428B57A2100B5045F /* testSwiftyFormsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2E1F328B57A2100B5045F /* testSwiftyFormsTests.swift */; };
 		9FA2E1FE28B57A2100B5045F /* testSwiftyFormsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2E1FD28B57A2100B5045F /* testSwiftyFormsUITests.swift */; };
 		9FA2E20028B57A2100B5045F /* testSwiftyFormsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2E1FF28B57A2100B5045F /* testSwiftyFormsUITestsLaunchTests.swift */; };
+		9FA2E21728B58C1700B5045F /* EasyFormsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA2E21628B58C1700B5045F /* EasyFormsPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA2E21728B58C1700B5045F /* EasyFormsPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +81,7 @@
 		9FA2E1D028B57A2000B5045F = {
 			isa = PBXGroup;
 			children = (
+				9FA2E21028B5822C00B5045F /* Packages */,
 				9FA2E1DB28B57A2000B5045F /* testSwiftyForms */,
 				9FA2E1F228B57A2100B5045F /* testSwiftyFormsTests */,
 				9FA2E1FC28B57A2100B5045F /* testSwiftyFormsUITests */,
@@ -127,6 +130,13 @@
 			path = testSwiftyFormsUITests;
 			sourceTree = "<group>";
 		};
+		9FA2E21028B5822C00B5045F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +153,9 @@
 			dependencies = (
 			);
 			name = testSwiftyForms;
+			packageProductDependencies = (
+				9FA2E21628B58C1700B5045F /* EasyFormsPackage */,
+			);
 			productName = testSwiftyForms;
 			productReference = 9FA2E1D928B57A2000B5045F /* testSwiftyForms.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 9FA2E1D028B57A2000B5045F;
+			packageReferences = (
+				9FA2E21528B58C1700B5045F /* XCRemoteSwiftPackageReference "EasyForms" */,
+			);
 			productRefGroup = 9FA2E1DA28B57A2000B5045F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -443,6 +459,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,6 +488,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -602,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FA2E21528B58C1700B5045F /* XCRemoteSwiftPackageReference "EasyForms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/charlesoxendine/EasyForms.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FA2E21628B58C1700B5045F /* EasyFormsPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FA2E21528B58C1700B5045F /* XCRemoteSwiftPackageReference "EasyForms" */;
+			productName = EasyFormsPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9FA2E1D128B57A2000B5045F /* Project object */;
 }
